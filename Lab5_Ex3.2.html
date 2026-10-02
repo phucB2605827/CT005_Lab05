@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu cá nhân - Lab 05</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0756a6, #2d82d4);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: 34px;
+        }
+
+        header p {
+            margin: 6px 0;
+            font-size: 18px;
+        }
+
+        main {
+            width: min(1000px, 92%);
+            margin: 35px auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.08);
+        }
+
+        h2 {
+            color: #0756a6;
+            margin-top: 0;
+        }
+
+        .info p {
+            font-size: 17px;
+            margin: 10px 0;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+        }
+
+        .product {
+            border: 1px solid #d9e5f2;
+            border-radius: 12px;
+            padding: 20px;
+            background: #f9fbfe;
+        }
+
+        .product h3 {
+            margin-top: 0;
+            color: #0756a6;
+        }
+
+        .product a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: #0756a6;
+            color: white;
+            text-decoration: none;
+        }
+
+        .product a:hover {
+            background: #064580;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto 0;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            left: 0;
+            top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #e8eef6;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>GIỚI THIỆU CÁ NHÂN</h1>
+    <p>Lab 05 - Quản lý phiên bản bằng Git/GitHub</p>
+</header>
+
+<main>
+
+    <section class="card info">
+        <h2>Thông tin cá nhân</h2>
+        <p><strong>Họ và tên:</strong> Phạm Quỳnh Công Phúc</p>
+        <p><strong>MSSV:</strong> B2605827</p>
+        <p><strong>Lớp học phần:</strong> CT005/D06</p>
+    </section>
+
+    <section class="card">
+        <h2>Ba sản phẩm đã thực hiện</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <h3>📄 Sản phẩm 1 - File PDF</h3>
+                <p>Sản phẩm thực hiện ở nhiệm vụ 1.2.</p>
+                <a href="Lab5_Ex1.2.pdf" target="_blank">Xem file PDF</a>
+            </div>
+
+            <div class="product">
+                <h3>🖼️ Sản phẩm 2 - Infographic</h3>
+                <p>Infographic về lợi ích của công nghệ số trong học tập.</p>
+                <a href="Lab5_Ex2.1.png" target="_blank">Xem infographic</a>
+            </div>
+
+            <div class="product">
+                <h3>🌐 Sản phẩm 3 - HTML</h3>
+                <p>Trang HTML hiển thị infographic và video YouTube.</p>
+                <a href="Lab5_Ex3.1.html" target="_blank">Mở trang HTML</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Video YouTube</h2>
+        <p>Video được nhúng trực tiếp từ YouTube.</p>
+
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/wuScTCshXus"
+                title="Video YouTube"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Công cụ sử dụng</h2>
+        <p>Git, GitHub, GitHub Copilot, HTML và CSS.</p>
+        <p>
+            Trang được phát triển trong khuôn khổ bài thực hành Lab 05.
+            Mã HTML có sự hỗ trợ của AI/GitHub Copilot.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 - Phạm Quỳnh Công Phúc - B2605827 - CT005/D06
+</footer>
+
+</body>
+</html>
